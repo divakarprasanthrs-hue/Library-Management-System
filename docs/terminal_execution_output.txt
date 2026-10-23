@@ -1,0 +1,389 @@
+﻿================================================================================
+             23CSR306 JAVA PROGRAMMING - ASSIGNMENT II                         
+             SPECIFICATION 2: LIBRARY MANAGEMENT SYSTEM                        
+             Student: Cibi K. | Register Number: 717825F112                    
+================================================================================
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+>>> [5. DISPLAY AVAILABLE BOOKS]
+-----------------------------------------------------------------------------------------------------------------
+| BOOK ID  | TITLE                                      | AUTHOR                 | ISBN            | AVAIL | TOTAL |
+-----------------------------------------------------------------------------------------------------------------
+| BK-101   | Effective Java                             | Joshua Bloch           | 978-0134685991  | 2     | 2     |
+| BK-102   | Clean Code: A Handbook of Agile Craftsmans | Robert C. Martin       | 978-0132350884  | 3     | 3     |
+| BK-103   | Design Patterns: Elements of Reusable Obje | Erich Gamma            | 978-0201633610  | 1     | 1     |
+| BK-104   | The Java Programming Language              | James Gosling          | 978-0321349804  | 4     | 4     |
+-----------------------------------------------------------------------------------------------------------------
+  Total Available Titles: 4
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+>>> [1. ADD NEW BOOK]
+Enter Book ID (e.g. BK-105): Enter Book Title: Enter Author Name: Enter Author Email (optional, press Enter to skip): Enter ISBN: Enter Total Copies (Stock): 
+  [SUCCESS] Book added successfully to the library catalog!
+  Added: Spring in Action | Total Stock: 3 copies
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+>>> [2. ADD NEW MEMBER]
+Enter Member ID (e.g. MEM-003 or PREM-003): Enter Member Name: Enter Contact Phone: Select Membership Type:
+  1. Regular Member (Max: 3 books, Loan: 14 days, Fine: Rs. 5.00/day)
+  2. Premium Member (Max: 6 books, Loan: 30 days, Fine: Rs. 2.00/day)
+Select [1 or 2]: 
+  [SUCCESS] Member successfully registered in the system!
+  Registered: Suresh Raina as Regular Member
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+>>> [2. ADD NEW MEMBER]
+Enter Member ID (e.g. MEM-003 or PREM-003): Enter Member Name: Enter Contact Phone: Select Membership Type:
+  1. Regular Member (Max: 3 books, Loan: 14 days, Fine: Rs. 5.00/day)
+  2. Premium Member (Max: 6 books, Loan: 30 days, Fine: Rs. 2.00/day)
+Select [1 or 2]: Enter Premium Tier (e.g. Gold, Platinum, VIP): 
+  [SUCCESS] Member successfully registered in the system!
+  Registered: Priya Sundar as Premium Member [VIP]
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+>>> [5. DISPLAY AVAILABLE BOOKS]
+-----------------------------------------------------------------------------------------------------------------
+| BOOK ID  | TITLE                                      | AUTHOR                 | ISBN            | AVAIL | TOTAL |
+-----------------------------------------------------------------------------------------------------------------
+| BK-101   | Effective Java                             | Joshua Bloch           | 978-0134685991  | 2     | 2     |
+| BK-102   | Clean Code: A Handbook of Agile Craftsmans | Robert C. Martin       | 978-0132350884  | 3     | 3     |
+| BK-103   | Design Patterns: Elements of Reusable Obje | Erich Gamma            | 978-0201633610  | 1     | 1     |
+| BK-104   | The Java Programming Language              | James Gosling          | 978-0321349804  | 4     | 4     |
+| BK-105   | Spring in Action                           | Craig Walls            | 978-1617294945  | 3     | 3     |
+-----------------------------------------------------------------------------------------------------------------
+  Total Available Titles: 5
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+>>> [3. BORROW BOOK]
+Enter Member ID: Enter Book ID: Enter Borrow Date (dd-MM-yyyy, or press Enter for today): 
+  [SUCCESS] Book borrowing transaction approved!
+
+============================================================
+                 OFFICIAL BORROW RECEIPT                    
+============================================================
+ Transaction ID     : TXN-1001
+ Borrow Date        : 10-10-2026
+ Due Date           : 24-10-2026 (14 days allowed)
+------------------------------------------------------------
+ MEMBER DETAILS:
+ Member ID          : MEM-001
+ Member Name        : Cibi K.
+ Membership Tier    : Regular Member
+ Active Borrows     : 1 / 3 books
+------------------------------------------------------------
+ BOOK DETAILS:
+ Book ID            : BK-101
+ Title              : Effective Java
+ Author             : Joshua Bloch
+ ISBN               : 978-0134685991
+ Updated Stock      : 1 available (Total: 2)
+============================================================
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+>>> [3. BORROW BOOK]
+Enter Member ID: Enter Book ID: Enter Borrow Date (dd-MM-yyyy, or press Enter for today): 
+  [SUCCESS] Book borrowing transaction approved!
+
+============================================================
+                 OFFICIAL BORROW RECEIPT                    
+============================================================
+ Transaction ID     : TXN-1002
+ Borrow Date        : 10-10-2026
+ Due Date           : 09-11-2026 (30 days allowed)
+------------------------------------------------------------
+ MEMBER DETAILS:
+ Member ID          : PREM-001
+ Member Name        : Ananya Sharma
+ Membership Tier    : Premium Member [Platinum]
+ Active Borrows     : 1 / 6 books
+------------------------------------------------------------
+ BOOK DETAILS:
+ Book ID            : BK-103
+ Title              : Design Patterns: Elements of Reusable Object-Oriented Software
+ Author             : Erich Gamma
+ ISBN               : 978-0201633610
+ Updated Stock      : 0 available (Total: 1)
+============================================================
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+>>> [3. BORROW BOOK]
+Enter Member ID: Enter Book ID: Enter Borrow Date (dd-MM-yyyy, or press Enter for today): 
+  [BORROW TRANSACTION REJECTED]
+  Reason: Book "Design Patterns: Elements of Reusable Object-Oriented Software" (ID: BK-103) is currently OUT OF STOCK (Available: 0/1).
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+>>> [3. BORROW BOOK]
+Enter Member ID: Enter Book ID: Enter Borrow Date (dd-MM-yyyy, or press Enter for today): 
+  [BORROW TRANSACTION REJECTED]
+  Reason: Member with ID 'MEM-999' does not exist.
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+>>> [4. RETURN BOOK]
+Return Options:
+  1. Return using Transaction ID (e.g. TXN-1001)
+  2. Return using Member ID and Book ID
+Select mode [1 or 2]: Enter Transaction ID: Enter Return Date (dd-MM-yyyy, or press Enter for today): 
+  [SUCCESS] Book return processed successfully!
+
+============================================================
+                 OFFICIAL RETURN RECEIPT                    
+============================================================
+ Return Txn ID      : RET-5001
+ Original Borrow Txn: TXN-1001
+ Return Date        : 20-10-2026
+ Scheduled Due Date : 24-10-2026
+------------------------------------------------------------
+ MEMBER DETAILS:
+ Member ID          : MEM-001
+ Member Name        : Cibi K.
+ Membership Tier    : Regular Member
+ Remaining Borrows  : 0 / 3 books
+------------------------------------------------------------
+ BOOK DETAILS:
+ Book ID            : BK-101
+ Title              : Effective Java
+ Author             : Joshua Bloch
+ Updated Stock      : 2 available (Total: 2)
+------------------------------------------------------------
+ FINE ASSESSMENT:
+ Overdue Duration   : 0 days (Returned on time)
+ Total Fine Due     : Rs. 0.00 (No fine applicable)
+============================================================
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+>>> [3. BORROW BOOK]
+Enter Member ID: Enter Book ID: Enter Borrow Date (dd-MM-yyyy, or press Enter for today): 
+  [SUCCESS] Book borrowing transaction approved!
+
+============================================================
+                 OFFICIAL BORROW RECEIPT                    
+============================================================
+ Transaction ID     : TXN-1003
+ Borrow Date        : 01-10-2026
+ Due Date           : 15-10-2026 (14 days allowed)
+------------------------------------------------------------
+ MEMBER DETAILS:
+ Member ID          : MEM-002
+ Member Name        : Dinesh Kumar
+ Membership Tier    : Regular Member
+ Active Borrows     : 1 / 3 books
+------------------------------------------------------------
+ BOOK DETAILS:
+ Book ID            : BK-102
+ Title              : Clean Code: A Handbook of Agile Craftsmanship
+ Author             : Robert C. Martin
+ ISBN               : 978-0132350884
+ Updated Stock      : 2 available (Total: 3)
+============================================================
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+>>> [4. RETURN BOOK]
+Return Options:
+  1. Return using Transaction ID (e.g. TXN-1001)
+  2. Return using Member ID and Book ID
+Select mode [1 or 2]: Enter Transaction ID: Enter Return Date (dd-MM-yyyy, or press Enter for today): 
+  [SUCCESS] Book return processed successfully!
+
+============================================================
+                 OFFICIAL RETURN RECEIPT                    
+============================================================
+ Return Txn ID      : RET-5002
+ Original Borrow Txn: TXN-1003
+ Return Date        : 25-10-2026
+ Scheduled Due Date : 15-10-2026
+------------------------------------------------------------
+ MEMBER DETAILS:
+ Member ID          : MEM-002
+ Member Name        : Dinesh Kumar
+ Membership Tier    : Regular Member
+ Remaining Borrows  : 0 / 3 books
+------------------------------------------------------------
+ BOOK DETAILS:
+ Book ID            : BK-102
+ Title              : Clean Code: A Handbook of Agile Craftsmanship
+ Author             : Robert C. Martin
+ Updated Stock      : 3 available (Total: 3)
+------------------------------------------------------------
+ FINE ASSESSMENT:
+ Overdue Duration   : 10 day(s) late
+ Daily Fine Rate    : Rs. 5.00/day
+ Total Fine Due     : Rs. 50.00 [APPLIED]
+============================================================
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+>>> [4. RETURN BOOK]
+Return Options:
+  1. Return using Transaction ID (e.g. TXN-1001)
+  2. Return using Member ID and Book ID
+Select mode [1 or 2]: Enter Transaction ID: Enter Return Date (dd-MM-yyyy, or press Enter for today): 
+  [RETURN TRANSACTION REJECTED]
+  Reason: Book for transaction 'TXN-1001' has already been returned.
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]:   [!] Error: Value must be between 1 and 6.
+Enter your choice [1-6]:   [!] Error: Please enter a valid whole number.
+Enter your choice [1-6]: 
+>>> [5. DISPLAY AVAILABLE BOOKS]
+-----------------------------------------------------------------------------------------------------------------
+| BOOK ID  | TITLE                                      | AUTHOR                 | ISBN            | AVAIL | TOTAL |
+-----------------------------------------------------------------------------------------------------------------
+| BK-101   | Effective Java                             | Joshua Bloch           | 978-0134685991  | 2     | 2     |
+| BK-102   | Clean Code: A Handbook of Agile Craftsmans | Robert C. Martin       | 978-0132350884  | 3     | 3     |
+| BK-104   | The Java Programming Language              | James Gosling          | 978-0321349804  | 4     | 4     |
+| BK-105   | Spring in Action                           | Craig Walls            | 978-1617294945  | 3     | 3     |
+-----------------------------------------------------------------------------------------------------------------
+  Total Available Titles: 4
+
+--------------------------------------------------------------------------------
+                            MAIN MENU OPTIONS                                   
+--------------------------------------------------------------------------------
+  1. Add Book
+  2. Add Member
+  3. Borrow Book
+  4. Return Book
+  5. Display Available Books
+  6. Exit
+--------------------------------------------------------------------------------
+Enter your choice [1-6]: 
+================================================================================
+   Thank you for using the Library Management System. Have a productive day!   
+================================================================================
+
